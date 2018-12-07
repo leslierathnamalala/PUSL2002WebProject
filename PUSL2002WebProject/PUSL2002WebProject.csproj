@@ -146,6 +146,8 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MainMapPage.aspx" />
+    <Content Include="Resources\jquery-latest.min.js" />
+    <Content Include="Resources\Menustyles.css" />
     <Content Include="Resources\Styles.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

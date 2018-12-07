@@ -9,7 +9,7 @@
     <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="Resources/styles.css">
+   <link rel="stylesheet" href="Resources/Menustyles.css">
    <script src="Resources/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
 
