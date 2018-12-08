@@ -144,6 +144,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="CaptainDetails2.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
@@ -260,6 +261,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CaptainDetails2.aspx.cs">
+      <DependentUpon>CaptainDetails2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CaptainDetails2.aspx.designer.cs">
+      <DependentUpon>CaptainDetails2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
