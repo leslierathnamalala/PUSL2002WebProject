@@ -55,13 +55,13 @@
                 </tr>
                  <tr>
                     <td><asp:Label ID="Email" runat="server" Text="Email"></asp:Label> </td>
-                    <td> <asp:TextBox ID="EBox" runat="server"></asp:TextBox></td>
+                    <td> <asp:TextBox ID="EBox" runat="server" TextMode="Email"></asp:TextBox></td>
                     <td>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidatorE" runat="server" ErrorMessage="The email you entered is incorrect." ControlToValidate="EBox" ForeColor="Red"></asp:RegularExpressionValidator></td>
                 </tr>
                  <tr>
                     <td><asp:Label ID="Dob" runat="server" Text="DoB"></asp:Label> </td>
-                    <td> <asp:TextBox ID="DobBox" runat="server"></asp:TextBox></td>
+                    <td> <asp:TextBox ID="DobBox" runat="server" TextMode="Date"></asp:TextBox></td>
                     <td><asp:RequiredFieldValidator ID="RequiredFieldValidatordob" runat="server" ErrorMessage="This is  a required field" ControlToValidate="DobBox" ForeColor="Red"></asp:RequiredFieldValidator></td>
                 </tr>
                  <tr>

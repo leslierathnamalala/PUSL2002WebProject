@@ -13,5 +13,10 @@ namespace PUSL2002WebProject
         {
 
         }
+
+        protected void EBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
