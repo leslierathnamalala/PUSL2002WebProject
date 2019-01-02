@@ -26,11 +26,36 @@
 <body>
     <form id="form1" runat="server">
         <div id="one">
-            <asp:Button ID="Button1" runat="server" Text="Create Captain Account" /><br>
-            <asp:Button ID="Button2" runat="server" Text="Create Staff member Account" />
-        </div>
-        <div>
+            Create Accounts<br />
+            <asp:Button ID="Button1" runat="server" Text="Create Captain Account" OnClick="Button1_Click" /><br>
+            <asp:Button ID="Button2" runat="server" Text="Create Staff member Account" OnClick="Button2_Click" />
+            <br />
+        <div id="two" style="padding: 20px; margin: 50px; border-style: solid; border-width: thick; width: 50%; height: 100%; right: -8px; position: relative; top: 5px; background-color: #336600; text-decoration: blink; font-weight: bold;">
 
+            News Upload<br />
+            <br />
+            <br />
+            <asp:Label ID="Label1" runat="server" Text="Ttile"></asp:Label>
+&nbsp;
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="Body"></asp:Label>
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox2" runat="server" BorderColor="#003300" BorderStyle="Solid" BorderWidth="3px" ForeColor="#99FF33" Height="171px" TextMode="MultiLine" Width="420px"></asp:TextBox>
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button3" runat="server" Text="Submit" Width="91px" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+        </div>
         </div>
     </form>
 </body>

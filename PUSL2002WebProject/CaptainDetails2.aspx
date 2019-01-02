@@ -77,12 +77,12 @@
                 </tr>
                  <tr>
                     <td><asp:Label ID="pw1" runat="server" Text="Password"></asp:Label> </td>
-                    <td> <asp:TextBox ID="PW1Box" runat="server"></asp:TextBox></td>
+                    <td> <asp:TextBox ID="PW1Box" runat="server" TextMode="Password"></asp:TextBox></td>
                     <td><asp:RequiredFieldValidator ID="RequiredFieldValidatorPW1" runat="server" ErrorMessage="This is  a required field" ControlToValidate="PW1Box" ForeColor="Red"></asp:RequiredFieldValidator></td>
                 </tr>
                  <tr>
                     <td><asp:Label ID="pw2" runat="server" Text="Confirm Password"></asp:Label> </td>
-                    <td> <asp:TextBox ID="PW2Box" runat="server"></asp:TextBox></td>
+                    <td> <asp:TextBox ID="PW2Box" runat="server" TextMode="Password"></asp:TextBox></td>
                     <td> <asp:CompareValidator ID="CompareValidatorPW" runat="server" ErrorMessage="Mismatch" ControlToValidate="PW2Box" ForeColor="Red"></asp:CompareValidator></td>
                 </tr>
             </table>
