@@ -5,12 +5,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
+    <style type="text/css">
+      
+        #tabledata {
+            max-width: 400px;
+            border: 25px solid green;
+            border-style: inset;
+            border-width: 5px 7px 5px 7px;
+            margin-left:500px;
+            margin-top:100px;
+            padding: 25px;
+            background-color: #ffffff;
+            
+            
+            
+        }
+        #Label1 {
+            margin-left:450px;
+                margin-top:200px;
+                margin-bottom:100px;
+                font-size: 60px;
+                
+        }
+        #Button1 {
+            margin-left:1000px;
+            margin-top:60px;
+            background-color: #4CAF50;
+            border: solid black;
+            color: black;
+            padding: 15px 32px;
+        }
+
+</style>    
 </head>
-<body>
+<body style="background-image: url("Resources/Back.jpeg")>
     <form id="form1" runat="server">
         <div>
-             <asp:Label ID="Label1" runat="server" Text="Enter Captain Detail"></asp:Label>
-            <table style="width: 100%;">
+             <asp:Label ID="Label1" runat="server" Text="Enter Captain Detail"></asp:Label><br>
+            <table style="width: 100%;" id="tabledata">
                 <tr>
                     <td><asp:Label ID="Fname" runat="server" Text="FirstName"></asp:Label> </td>
                     <td> <asp:TextBox ID="fnbox" runat="server"></asp:TextBox></td>
