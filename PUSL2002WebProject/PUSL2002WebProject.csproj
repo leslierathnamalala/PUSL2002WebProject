@@ -146,8 +146,8 @@
     </Content>
     <Content Include="CaptainDetails2.aspx" />
     <Content Include="Database\garbLight.db" />
+    <Content Include="uploadImage.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Login form.aspx" />
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
     <Content Include="Resources\Menustyles.css" />
@@ -228,13 +228,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Login form.aspx.cs">
-      <DependentUpon>Login form.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login form.aspx.designer.cs">
-      <DependentUpon>Login form.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MainMapPage.aspx.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -277,6 +270,13 @@
     </Compile>
     <Compile Include="CaptainDetails2.aspx.designer.cs">
       <DependentUpon>CaptainDetails2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadImage.aspx.cs">
+      <DependentUpon>uploadImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadImage.aspx.designer.cs">
+      <DependentUpon>uploadImage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

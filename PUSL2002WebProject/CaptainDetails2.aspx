@@ -43,7 +43,7 @@
 </head>
 <body style="background-image: url("Resources/Back.jpeg")>
     <form id="form1" runat="server">
-        <div>
+        <div style="background-color: #FFFFFF">
              <asp:Label ID="Label1" runat="server" Text="Enter Captain Detail"></asp:Label><br>
             <table style="width: 100%;" id="tabledata">
                 <tr>
