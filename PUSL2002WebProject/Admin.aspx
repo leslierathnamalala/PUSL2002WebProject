@@ -25,12 +25,17 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="one">
-            Create Accounts<br />
-            <asp:Button ID="Button1" runat="server" Text="Create Captain Account" OnClick="Button1_Click" /><br>
-            <asp:Button ID="Button2" runat="server" Text="Create Staff member Account" OnClick="Button2_Click" />
+        <div id="one" style="background-image:; background-color: #000000;"image\Back.jpeg" width: 100%; height: 100%;">
             <br />
-        <div id="two" style="padding: 20px; margin: 50px; border-style: solid; border-width: thick; width: 50%; height: 100%; right: -8px; position: relative; top: 5px; background-color: #336600; text-decoration: blink; font-weight: bold;">
+            <br>
+            <div style="border: thick solid #000000; background-color: #669900; padding: 20px; margin: 20px; position: relative; width: 50%; height: 100%; right: -11px; top: 2px; font-weight: bold; font-style: normal; text-decoration: blink;">
+                Create Accounts<br />
+            <asp:Button ID="Button1" runat="server" Text="Create Captain Account" OnClick="Button1_Click" />
+                <br />
+            <asp:Button ID="Button2" runat="server" Text="Create Staff member Account" OnClick="Button2_Click" />
+            </div>
+            <br />
+        &nbsp;<div id="two" style="padding: 20px; margin: 50px; border-style: solid; border-width: thick; width: 50%; height: 100%; right: 24px; position: relative; top: 2px; background-color: #336600; text-decoration: blink; font-weight: bold;">
 
             News Upload<br />
             <br />

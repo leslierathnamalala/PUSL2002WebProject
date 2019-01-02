@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CaptainDetails2.aspx.cs" Inherits="PUSL2002WebProject.WebForm1" %>
+﻿<asp:image runat="server"></asp:image> 
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CaptainDetails2.aspx.cs" Inherits="PUSL2002WebProject.WebForm1" %>
 
 <!DOCTYPE html>
 

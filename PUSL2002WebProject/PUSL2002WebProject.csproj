@@ -147,6 +147,7 @@
     <Content Include="CaptainDetails2.aspx" />
     <Content Include="Database\garbLight.db" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Login form.aspx" />
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
     <Content Include="Resources\Menustyles.css" />
@@ -227,6 +228,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Login form.aspx.cs">
+      <DependentUpon>Login form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login form.aspx.designer.cs">
+      <DependentUpon>Login form.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MainMapPage.aspx.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -273,6 +281,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="image\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
