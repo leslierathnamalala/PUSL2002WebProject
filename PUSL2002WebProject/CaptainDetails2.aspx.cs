@@ -44,6 +44,12 @@ namespace PUSL2002WebProject
             Label2.Text = "User registered successfully";
 
             TextBox6.Text = "";
+            fnbox.Text = "";
+            LnBox.Text = "";
+            EBox.Text = "";
+            DobBox.Text = "";
+            genBox.Text = "";
+            PW1Box.Text = "";
         }
     }
 }
