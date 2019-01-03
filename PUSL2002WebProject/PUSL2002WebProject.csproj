@@ -130,6 +130,10 @@
     <Content Include="About.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="AdminPage.aspx" />
+    <Content Include="App_Data\Admin.mdf" />
+    <Content Include="App_Data\Admin_log.ldf">
+      <DependentUpon>Admin.mdf</DependentUpon>
+    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -296,7 +300,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="image\" />
   </ItemGroup>
   <ItemGroup>
