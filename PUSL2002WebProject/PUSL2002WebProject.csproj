@@ -148,6 +148,7 @@
     <Content Include="Database\garbLight.db" />
     <Content Include="login.aspx" />
     <Content Include="uploadImage.aspx" />
+    <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
@@ -285,6 +286,13 @@
     </Compile>
     <Compile Include="uploadImage.aspx.designer.cs">
       <DependentUpon>uploadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
