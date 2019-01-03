@@ -13,5 +13,22 @@ namespace PUSL2002WebProject
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CaptainDetails2.aspx");
+            //or
+            Server.Transfer("CaptainDetails2.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            //StaffDetaiForm.aspx
+            
+                Response.Redirect("StaffDetaiForm.aspx");
+                //or
+                Server.Transfer("StaffDetaiForm.aspx");
+            
+        }
     }
 }
