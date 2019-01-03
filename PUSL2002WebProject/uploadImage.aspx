@@ -5,115 +5,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
- <style type="text/css">
-        .auto-style1 {
-            font-size: x-large;
-            text-align: center;
-        }
-        .auto-style2 {
-            width: 100%;
-        }
-        .auto-style3 {
-            width: 189px;
-        }
-        .auto-style4 {
-            width: 189px;
-            height: 30px;
-        }
-        .auto-style5 {
-            height: 30px;
-        }
+     <style type="text/css">
+    .ABC {
+	width: 510px;
+	height: 420px;
+	background: #C0C0C0;
+	color: #000000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+h1 {
+	text-align: center;
+	font-size: 28px;
+
+
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="auto-style1">
-            <strong>Login Form</strong></div>
-        <table class="auto-style2">
-            <tr>
-                <td class="auto-style3">Username</td>
-                <td>
-                    <asp:TextBox ID="TextBoxUsername" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxUsername" ErrorMessage="Please enter username" ForeColor="Red"></asp:RequiredFieldValidator>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">Password</td>
-                <td>
-                    <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style4">
-                    <asp:Button ID="Button_Login" runat="server" Text="Login" />
-                </td>
-                <td class="auto-style5"></td>
-                <td class="auto-style5"></td>
-            </tr>
-        </table>
-    </form>
-</body> <style type="text/css">
-        .auto-style1 {
-            font-size: x-large;
-            text-align: center;
-        }
-        .auto-style2 {
-            width: 100%;
-        }
-        .auto-style3 {
-            width: 189px;
-        }
-        .auto-style4 {
-            width: 189px;
-            height: 30px;
-        }
-        .auto-style5 {
-            height: 30px;
-        }
-    </style>
-</head>
-<body>
-    <form id="form2" runat="server">
-        <div class="auto-style1">
-            <strong>Login Form</strong></div>
-        <table class="auto-style2">
-            <tr>
-                <td class="auto-style3">Username</td>
-                <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBoxUsername" ErrorMessage="Please enter username" ForeColor="Red"></asp:RequiredFieldValidator>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">Password</td>
-                <td>
-                    <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBoxPassword" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style4">
-                    <asp:Button ID="Button1" runat="server" Text="Login" />
-                </td>
-                <td class="auto-style5"></td>
-                <td class="auto-style5"></td>
-            </tr>
-        </table>
-    </form>
+    <form id="form1" runat="server">   
+        <div class="ABC"> 
+			<h1>Upload Your Photo</h1>
+            <table>    
+                <tr>   
+                     <td>  <asp:Label ID="Label2" runat="server"  Text="Image" Font-Size="Larger"></asp:Label></td>
+                      <td> <asp:TextBox ID="TextBox2" runat="server" Height="48px" Width="306px" CssClass="auto-style1"></asp:TextBox></td>
+                </tr>
+                 <tr>   
+                     <td>  <asp:Label ID="Label3" runat="server" Text="Discription" Font-Size="Larger"></asp:Label></td>
+                     <td> <asp:TextBox ID="TextBox1" runat="server" Height="48px" Width="306px" TextMode="MultiLine" CssClass="auto-style1"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Upload" Height="44px" Width="105px" />
+                    </td>
+                </tr>
+        </div>
+       </form>       
 </body>
 </html>
