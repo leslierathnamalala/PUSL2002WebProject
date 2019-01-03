@@ -146,6 +146,7 @@
     </Content>
     <Content Include="CaptainDetails2.aspx" />
     <Content Include="Database\garbLight.db" />
+    <Content Include="login.aspx" />
     <Content Include="uploadImage.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MainMapPage.aspx" />
@@ -227,6 +228,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainMapPage.aspx.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
