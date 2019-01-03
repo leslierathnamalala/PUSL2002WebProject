@@ -8,12 +8,89 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" href="~/App_Data/Menustyles.css">
+    <style type="text/css">
+        #maparea {
+            width: 83%;
+            float: left
+        }
+
+        .left {
+            width: 200px;
+            height: 1100px;
+            background-image: url(Pictures/sideBar1.jpg);
+            float: left
+        }
+
+        .box1 {
+            width: 160px;
+            height: 180px;
+            background-color: darkgray;
+            opacity: 0.7;
+            margin-left: 20px;
+            padding-top: 10px
+        }
+
+        .box2 {
+            width: 160px;
+            height: 180px;
+            background-color: darkgray;
+            opacity: 0.7;
+            margin-left: 20px;
+            margin-top: 7px
+        }
+
+        .box3 {
+            width: 160px;
+            height: 180px;
+            background-color: darkgray;
+            opacity: 0.7;
+            margin-left: 20px;
+            margin-top: 7px
+        }
+
+        #googleMap {
+            float: left
+        }
+
+        #Mbody {
+            background-image: url(Sources/Doodle Back Wall.jpg)
+        }
+
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        #map_canvas {
+            height: 100%
+        }
+    </style>
+
+
+
 </head>
 <body>
-    <div id="dvMap" style="width: 500px; height: 500px">
+    <div id='cssmenu'>
+        <ul>
+            <li class='active'><a href='#'>Home</a></li>
+            <li><a href='#'>GTF Members</a></li>
+            <li><a href='#'>Collection Spots</a></li>
+            <li><a href='#'>Contact</a></li>
+        </ul>
     </div>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQNninyZTdg4dNCZ7WPSbY-s_n6yseAT8"></script>
-    <script type="text/javascript">
+    <div id="maparea">
+        <div id="dvMap" style="width: 500px; height: 500px">
+        </div>
+    </div>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQNninyZTdg4dNCZ7WPSbY-s_n6yseAT8"></script>
+        <script type="text/javascript">
         var markers = @Html.Raw(ViewBag.Markers);
         window.onload = function () {
             var mapOptions = {
@@ -39,6 +116,6 @@
                 })(marker, data);
             }
         }
-    </script>
+        </script>
 </body>
 </html>
