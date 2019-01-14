@@ -1,5 +1,4 @@
-﻿<asp:image runat="server"></asp:image> 
-
+﻿
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CaptainDetails2.aspx.cs" Inherits="PUSL2002WebProject.WebForm1" %>
 
 <!DOCTYPE html>
@@ -32,23 +31,35 @@
         }
         #Button1 {
             margin-left:1000px;
-            margin-top:60px;
-            background-color: #4CAF50;
-            border: solid black;
-            color: black;
+            margin-top:10px;
+            margin-bottom:20px;
+            background-color:aliceblue;
+             border: 25px solid green;
+            border-style: inset;
+            border-width: 5px 7px 5px 7px; 
             padding: 15px 32px;
         }
 
+         #Button2 {
+            margin-left:1000px;
+            margin-top:10px;
+            margin-bottom:20px;
+            background-color:aliceblue;
+             border: 25px solid green;
+            border-style: inset;
+            border-width: 5px 7px 5px 7px; 
+            padding: 15px 32px;
+        }
         .auto-style1 {
             height: 29px;
         }
 
     </style>    
 </head>
-<body style="background-image: url("Resources/Back.jpeg")>
+<body >
     <form id="form1" runat="server">
-        <div style="background-color: #FFFFFF">
-             <asp:Label ID="Label1" runat="server" Text="Enter Captain Detail"></asp:Label><br>
+        <div style="background-image:url(image/Back.jpeg)">
+             <asp:Label ID="Label1" runat="server" Text="Enter Captain Detail" ForeColor="White"></asp:Label><br>
             <table style="width: 100%;" id="tabledata">
                 <tr>
                     <td><asp:Label ID="Fname" runat="server" Text="FirstName"></asp:Label> </td>
@@ -96,6 +107,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              <asp:Label ID="Label2" runat="server"></asp:Label>
             <asp:Button ID="Button1" runat="server" Text="Save" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" Text="Back" />
         </div>
     </form>
 </body>
