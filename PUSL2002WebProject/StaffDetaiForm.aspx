@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StaffDetaiForm.aspx.cs" Inherits="PUSL2002WebProject.StaffDetaiForm" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StaffDetaiForm.aspx.cs" Inherits="PUSL2002WebProject.StaffDetaiForm" %>
 
 <!DOCTYPE html>
 
