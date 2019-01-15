@@ -24,6 +24,7 @@
              border: 25px solid green;
             border-style: inset;
             border-width: 5px 7px 5px 7px;
+       
         }
         #two {
              border: 25px solid green;
@@ -41,14 +42,14 @@
         <div id="one" style="background-image:url(image/Back.jpeg); width: 100%; height: 100%;">
             <br />
             <br>
-            <div id ="first" style="color: #FFFFFF; width: 45%">
+            <div id ="first" style="padding: 20px; color: #FFFFFF; width: 45%">
                 Create Accounts<br />
-            <asp:Button ID="Button1" runat="server" Text="Create Captain Account" OnClick="Button1_Click" BorderColor="White" />
+            <asp:Button ID="Button1" runat="server" Text="Create Captain Account" OnClick="Button1_Click" BorderColor="White" Width="372px" />
                 <br />
-            <asp:Button ID="Button2" runat="server" Text="Create Staff member Account" OnClick="Button2_Click" BorderColor="White" />
+            <asp:Button ID="Button2" runat="server" Text="Create Staff member Account" OnClick="Button2_Click" BorderColor="White" Width="370px" />
             </div>
             <br />
-        &nbsp;<div id="two" style="color: #FFFFFF; width: 45%; height: 35%;">
+        &nbsp;<div id="two" style="padding: 20px; color: #FFFFFF; width: 45%; height: 35%;">
 
             News Upload<br />
             <br />
