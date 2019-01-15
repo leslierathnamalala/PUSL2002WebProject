@@ -148,16 +148,7 @@
     <Content Include="About.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="AdminPage.aspx" />
-<<<<<<< HEAD
-    <Content Include="App_Data\Locations.mdf" />
-    <Content Include="App_Data\Locations_log.ldf">
-      <DependentUpon>Locations.mdf</DependentUpon>
-=======
-    <Content Include="App_Data\Admin.mdf" />
-    <Content Include="App_Data\Admin_log.ldf">
-      <DependentUpon>Admin.mdf</DependentUpon>
->>>>>>> a747fab56556c54a211214f1869ad81f47ecaf80
-    </Content>
+
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -173,15 +164,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="CaptainDetails2.aspx" />
-<<<<<<< HEAD
-    <Content Include="GTFPage.aspx" />
-=======
-    <Content Include="Database\garbLight.db" />
-    <Content Include="login.aspx" />
-    <Content Include="uploadImage.aspx" />
-    <Content Include="WebForm3.aspx" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
->>>>>>> a747fab56556c54a211214f1869ad81f47ecaf80
+
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
     <Content Include="Resources\Menustyles.css" />
@@ -277,22 +260,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="GTFPage.aspx.cs">
-      <DependentUpon>GTFPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GTFPage.aspx.designer.cs">
-      <DependentUpon>GTFPage.aspx</DependentUpon>
-=======
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
->>>>>>> a747fab56556c54a211214f1869ad81f47ecaf80
-    </Compile>
+
     <Compile Include="MainMapPage.aspx.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -351,13 +319,7 @@
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-<<<<<<< HEAD
-  <ItemGroup />
-=======
-  <ItemGroup>
-    <Folder Include="image\" />
-  </ItemGroup>
->>>>>>> a747fab56556c54a211214f1869ad81f47ecaf80
+
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />
