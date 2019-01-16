@@ -149,7 +149,10 @@
     <Content Include="Admin.aspx" />
     <Content Include="AdminPage.aspx" />
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e65c415872e909005bf87f8770f952970cfd939b
     <Content Include="App_Data\Locations.mdf" />
     <Content Include="App_Data\Locations_log.ldf">
       <DependentUpon>Locations.mdf</DependentUpon>
@@ -176,6 +179,12 @@
     </Content>
     <Content Include="CaptainDetails2.aspx" />
 
+<<<<<<< HEAD
+=======
+    <Content Include="imageuploadbyvol.aspx" />
+
+
+>>>>>>> e65c415872e909005bf87f8770f952970cfd939b
 
     <Content Include="GTFPage.aspx" />
 
@@ -192,6 +201,7 @@
     <Content Include="Resources\Styles.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Captain.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -282,6 +292,16 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
 
+<<<<<<< HEAD
+=======
+    <Compile Include="imageuploadbyvol.aspx.cs">
+      <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="imageuploadbyvol.aspx.designer.cs">
+      <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
+    </Compile>
+>>>>>>> e65c415872e909005bf87f8770f952970cfd939b
 
     <Compile Include="GTFPage.aspx.cs">
       <DependentUpon>GTFPage.aspx</DependentUpon>
@@ -357,9 +377,19 @@
     <Compile Include="WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Captain.aspx.cs">
+      <DependentUpon>Captain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Captain.aspx.designer.cs">
+      <DependentUpon>Captain.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e65c415872e909005bf87f8770f952970cfd939b
   <ItemGroup />
 
   <ItemGroup>

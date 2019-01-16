@@ -24,12 +24,28 @@
              border: 25px solid green;
             border-style: inset;
             border-width: 5px 7px 5px 7px;
+            float:left;
        
         }
-        #two {
+        #two {margin-top:0px;
+              
              border: 25px solid green;
             border-style: inset;
             border-width: 5px 7px 5px 7px;
+            
+            
+        }
+        #mapDiv{
+            width: 900px; height: 500px;float:left;border: 25px solid green;
+            border-style: inset;
+            border-width: 5px 7px 5px 7px;
+            height:720px;
+            float:right;
+            
+        }
+        #other{
+
+            float:left;
         }
     </style>
 </head>
@@ -39,17 +55,18 @@
 
 <body>
     <form id="form1" runat="server">
-        <div id="one" style="background-image:url(image/Back.jpeg); width: 100%; height: 100%;">
+        <div id="one" style="background-image:url(image/Back.jpeg); width: 100%; height: 1000px;">
             <br />
             <br>
-            <div id ="first" style="padding: 20px; color: #FFFFFF; width: 45%">
+           <div id="other">
+                <div id ="first" style="padding: 20px; color: #FFFFFF; width: 500px">
                 Create Accounts<br />
             <asp:Button ID="Button1" runat="server" Text="Create Captain Account" OnClick="Button1_Click" BorderColor="White" Width="372px" />
                 <br />
             <asp:Button ID="Button2" runat="server" Text="Create Staff member Account" OnClick="Button2_Click" BorderColor="White" Width="370px" />
             </div>
             <br />
-        &nbsp;<div id="two" style="padding: 20px; color: #FFFFFF; width: 45%; height: 35%;">
+        &nbsp;<div id="two" style="padding: 20px; color: #FFFFFF; width: 500px; height: 450px;">
 
             News Upload<br />
             <br />
@@ -68,14 +85,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button3" runat="server" Text="Submit" Width="91px" />
             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            
 
         </div>
+           </div>
+            <div id="mapDiv">
+            </div>
         </div>
+        
     </form>
 </body>
 </html>
