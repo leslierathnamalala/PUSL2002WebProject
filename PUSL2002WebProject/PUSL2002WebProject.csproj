@@ -149,7 +149,7 @@
     <Content Include="Admin.aspx" />
     <Content Include="AdminPage.aspx" />
 
-<<<<<<< HEAD
+
     <Content Include="App_Data\Locations.mdf" />
     <Content Include="App_Data\Locations_log.ldf">
       <DependentUpon>Locations.mdf</DependentUpon>
@@ -159,8 +159,7 @@
       <DependentUpon>Admin.mdf</DependentUpon>
 
     </Content>
-=======
->>>>>>> 6d26ba16b55fe63884a0bb17843521d7654bcb65
+
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -177,7 +176,7 @@
     </Content>
     <Content Include="CaptainDetails2.aspx" />
 
-<<<<<<< HEAD
+
     <Content Include="GTFPage.aspx" />
 
     <Content Include="Database\garbLight.db" />
@@ -186,8 +185,7 @@
     <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
 
-=======
->>>>>>> 6d26ba16b55fe63884a0bb17843521d7654bcb65
+
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
     <Content Include="Resources\Menustyles.css" />
@@ -284,7 +282,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
 
-<<<<<<< HEAD
+
     <Compile Include="GTFPage.aspx.cs">
       <DependentUpon>GTFPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -301,8 +299,7 @@
       <DependentUpon>login.aspx</DependentUpon>
 
     </Compile>
-=======
->>>>>>> 6d26ba16b55fe63884a0bb17843521d7654bcb65
+
     <Compile Include="MainMapPage.aspx.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,15 +359,14 @@
     </Compile>
   </ItemGroup>
 
-<<<<<<< HEAD
+
   <ItemGroup />
 
   <ItemGroup>
     <Folder Include="image\" />
   </ItemGroup>
 
-=======
->>>>>>> 6d26ba16b55fe63884a0bb17843521d7654bcb65
+
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />
