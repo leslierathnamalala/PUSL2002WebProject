@@ -13,9 +13,9 @@ namespace GoogleMapLocations.Models
         [Display(Name = "City Name")]
         public string CityName { get; set; }
         [Required(ErrorMessage = "Please enter city latitude")]
-        public double Latitude { get; set; }
+        public float Latitude { get; set; }
         [Required(ErrorMessage = "Please enter city longitude ")]
-        public double Longitude { get; set; }
+        public float Longitude { get; set; }
         public string Description { get; set; }
     }
 }

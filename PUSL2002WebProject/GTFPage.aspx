@@ -30,6 +30,7 @@
                     <br />
                     <asp:Button ID="Button1" runat="server" Height="26px" Text="Submit" />
                 </div>
+                <a href ="http://localhost:3424/Home/Index "> Home Page</a>
             </div>
             <br />
             <br />
