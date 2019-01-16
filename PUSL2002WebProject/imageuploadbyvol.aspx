@@ -14,7 +14,11 @@
                 <tr>
                     <td> <asp:FileUpload ID="FileUpload1" runat="server" /></td> 
                 </tr>
-               
+
+                <tr>
+                    <td><asp:Label ID="Label3" runat="server" Text="Only files of type(.jpg,.png,.gif and .bmp)can be uploaded"></asp:Label></td> 
+                </tr>
+
                 <tr>
                     <td> <asp:Label ID="Label1" runat="server" Text="Your discription here"></asp:Label>
                     <br/> <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>

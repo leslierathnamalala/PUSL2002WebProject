@@ -19,20 +19,32 @@ namespace PUSL2002WebProject
 
             if (!IsPostBack)
             {
+                Label3.Visible = false;
                 HyperLink1.Visible = false;
             }
             
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+
             HttpPostedFile postedfile = FileUpload1.PostedFile;
             string filename = Path.GetFileName(postedfile.FileName);
-            string fileextention = Path.GetExtension(postedfile.FileName);
-            
-            if (filename.ToLower()+= ".jpg"  ||  filename.ToLower() += ".png" || filename.ToLower() += ".bmp")
-            {
+            string fileextention = Path.GetExtension(filename);
 
+            
+            if (fileextention.ToLower() == ".jpg"  || fileextention.ToLower()  == ".png" || fileextention.ToLower() == ".bmp")
+            {
+                Stream stream = postedfile.InputStream;
+                BinaryReader binaryReader = new BinaryReader(stream);
+                binaryReader.ReadBytes();
+
+            }
+            else
+            {
+                Label3.Visible = true;
             }
         }
     }
