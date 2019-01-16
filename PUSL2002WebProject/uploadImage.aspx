@@ -6,12 +6,12 @@
 <head runat="server">
     <title></title>
      <style type="text/css">
-    .ABC {
+         .ABC {
 	width: 510px;
 	height: 420px;
 	background: #C0C0C0;
 	color: #000000;
-	top: 50%;
+	top: 48%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
@@ -23,11 +23,15 @@ h1 {
 	font-size: 28px;
 
 
+    
+         .auto-style1 {}
+
+
     </style>
 </head>
 <body>
     <form id="form1" runat="server">   
-        <div class="ABC"> 
+        <div class="ABC" style="border-style: solid; border-width: thick"> 
 			<h1>Upload Your Photo</h1>
             <table>    
                 <tr>   
@@ -36,7 +40,7 @@ h1 {
                 </tr>
                  <tr>   
                      <td>  <asp:Label ID="Label3" runat="server" Text="Discription" Font-Size="Larger"></asp:Label></td>
-                     <td> <asp:TextBox ID="TextBox1" runat="server" Height="48px" Width="306px" TextMode="MultiLine" CssClass="auto-style1"></asp:TextBox></td>
+                     <td> <asp:TextBox ID="TextBox1" runat="server" Height="291px" Width="423px" TextMode="MultiLine" CssClass="auto-style1"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>
