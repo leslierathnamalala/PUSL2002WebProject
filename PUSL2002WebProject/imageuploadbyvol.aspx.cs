@@ -39,7 +39,7 @@ namespace PUSL2002WebProject
             {
                 Stream stream = postedfile.InputStream;
                 BinaryReader binaryReader = new BinaryReader(stream);
-                binaryReader.ReadBytes();
+               // binaryReader.ReadBytes();
 
             }
             else
