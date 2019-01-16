@@ -16,8 +16,8 @@ namespace Google_Maps_MVC.Controllers
         public ActionResult Index()
         {
             string markers = "[";
-            string conString = ConfigurationManager.ConnectionStrings["ConString"].ConnectionString;
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Locations");
+            string conString = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            SqlCommand cmd = new SqlCommand("SELECT * FROM GoogleMap");
             using (SqlConnection con = new SqlConnection(conString))
             {
                 cmd.Connection = con;
@@ -27,7 +27,7 @@ namespace Google_Maps_MVC.Controllers
                     while (sdr.Read())
                     {
                         markers += "{";
-                        markers += string.Format("'title': '{0}',", sdr["Name"]);
+                        markers += string.Format("'title': '{0}',", sdr["CityName"]);
                         markers += string.Format("'lat': '{0}',", sdr["Latitude"]);
                         markers += string.Format("'lng': '{0}',", sdr["Longitude"]);
                         markers += string.Format("'description': '{0}'", sdr["Description"]);
@@ -40,6 +40,11 @@ namespace Google_Maps_MVC.Controllers
             markers += "];";
             ViewBag.Markers = markers;
             return View();
+        }
+        [HttpGet]
+        public RedirectResult redirect()
+        {
+            return Redirect("www.google.com");
         }
     }
 }
