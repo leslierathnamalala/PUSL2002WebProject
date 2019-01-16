@@ -39,8 +39,13 @@ namespace PUSL2002WebProject
             {
                 Stream stream = postedfile.InputStream;
                 BinaryReader binaryReader = new BinaryReader(stream);
-               // binaryReader.ReadBytes();
-
+                byte[] bytes = binaryReader.ReadBytes((int)stream.Length);
+                
+                string cs =ConfigurationManager.ConnectionStrings["data source=DESKTOP-J3SS71C\Anjanee Herath; database=Garbage; integrated security=true;"].ConnectionString;
+                using (SqlConnection con=new SqlConnection(cs))
+                {
+                    SqlCommand cmd=new SqlCommand("")
+                }
             }
             else
             {
