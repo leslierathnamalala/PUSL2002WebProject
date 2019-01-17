@@ -150,6 +150,10 @@
     <Content Include="AdminPage.aspx" />
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea00faae64bef1d63999f80839912e016b3893e9
     <Content Include="App_Data\Locations.mdf" />
     <Content Include="App_Data\Locations_log.ldf">
       <DependentUpon>Locations.mdf</DependentUpon>
@@ -180,6 +184,10 @@
     <Content Include="imageuploadbyvol.aspx" />
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea00faae64bef1d63999f80839912e016b3893e9
 
     <Content Include="GTFPage.aspx" />
 
@@ -287,6 +295,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea00faae64bef1d63999f80839912e016b3893e9
     <Compile Include="imageuploadbyvol.aspx.cs">
       <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -294,6 +306,10 @@
     <Compile Include="imageuploadbyvol.aspx.designer.cs">
       <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea00faae64bef1d63999f80839912e016b3893e9
 
     <Compile Include="GTFPage.aspx.cs">
       <DependentUpon>GTFPage.aspx</DependentUpon>
@@ -378,6 +394,11 @@
     </Compile>
   </ItemGroup>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ea00faae64bef1d63999f80839912e016b3893e9
   <ItemGroup />
 
   <ItemGroup>

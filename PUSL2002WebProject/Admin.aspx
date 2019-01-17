@@ -89,7 +89,7 @@
 
         </div>
            </div>
-            <div id="mapDiv">
+            <div id="mapDiv" style="overflow: scroll">
             </div>
         </div>
         
