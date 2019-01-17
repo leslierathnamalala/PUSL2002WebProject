@@ -12,6 +12,7 @@ namespace PUSL2002WebProject
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        String typex = "Captain";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -27,16 +28,18 @@ namespace PUSL2002WebProject
         {
 
 
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["GarbageConnectionString"].ConnectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Captain values (@CaptainID, @FirstName, @LastName, @Email,@DoB, @Gender, @Password)", con);
-            cmd.Parameters.AddWithValue("CaptainID", TextBox6.Text);
+            SqlCommand cmd = new SqlCommand("insert into CaptainStaff values (@FirstName, @LastName, @Email,@DoB, @Gender, @ID, @Password, @Type)", con);
+            cmd.Parameters.AddWithValue("ID", TextBox6.Text);
             cmd.Parameters.AddWithValue("FirstName", fnbox.Text);
             cmd.Parameters.AddWithValue("LastName", LnBox.Text);
             cmd.Parameters.AddWithValue("Email", EBox.Text);
             cmd.Parameters.AddWithValue("DoB", DobBox.Text);
             cmd.Parameters.AddWithValue("Gender", genBox.Text);
             cmd.Parameters.AddWithValue("Password", PW1Box.Text);
+            cmd.Parameters.AddWithValue("type", typex);
+
 
             cmd.ExecuteNonQuery();
             //Label2

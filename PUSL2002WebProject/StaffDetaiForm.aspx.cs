@@ -12,6 +12,8 @@ namespace PUSL2002WebProject
 {
     public partial class StaffDetaiForm : System.Web.UI.Page
     {
+        String typex = "Staff";
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,17 +21,17 @@ namespace PUSL2002WebProject
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["GarbageConnectionString"].ConnectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Staff values (@StaffID, @FirstName, @LastName, @Email,@DoB, @Gender, @Password)", con);
-            cmd.Parameters.AddWithValue("StaffID", TextBox6.Text);
+            SqlCommand cmd = new SqlCommand("insert into CaptainStaff values (@FirstName, @LastName, @Email,@DoB, @Gender, @ID,@Password, @Type)", con);
+            cmd.Parameters.AddWithValue("ID", TextBox6.Text);
             cmd.Parameters.AddWithValue("FirstName", fnbox.Text);
             cmd.Parameters.AddWithValue("LastName", LnBox.Text);
             cmd.Parameters.AddWithValue("Email", EBox.Text);
             cmd.Parameters.AddWithValue("DoB", DobBox.Text);
             cmd.Parameters.AddWithValue("Gender", genBox.Text);
             cmd.Parameters.AddWithValue("Password", PW1Box.Text);
-
+            cmd.Parameters.AddWithValue("type", typex);
             cmd.ExecuteNonQuery();
             //Label2
             Label2.Visible = true;

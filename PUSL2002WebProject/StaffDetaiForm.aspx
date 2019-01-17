@@ -72,8 +72,7 @@
                  <tr>
                     <td><asp:Label ID="Email" runat="server" Text="Email"></asp:Label> </td>
                     <td> <asp:TextBox ID="EBox" runat="server" TextMode="Email"></asp:TextBox></td>
-                    <td>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidatorE" runat="server" ErrorMessage="The email you entered is incorrect." ControlToValidate="EBox" ForeColor="Red"></asp:RegularExpressionValidator></td>
+                    
                 </tr>
                  <tr>
                     <td><asp:Label ID="Dob" runat="server" Text="DoB"></asp:Label> </td>
@@ -98,14 +97,12 @@
                  <tr>
                     <td><asp:Label ID="pw2" runat="server" Text="Confirm Password"></asp:Label> </td>
                     <td> <asp:TextBox ID="PW2Box" runat="server" TextMode="Password"></asp:TextBox></td>
-                    <td> <asp:CompareValidator ID="CompareValidatorPW" runat="server" ErrorMessage="Mismatch" ControlToValidate="PW2Box" ForeColor="Red"></asp:CompareValidator></td>
+                    <td> <asp:CompareValidator ID="CompareValidatorPW" runat="server" ErrorMessage="Mismatch" ControlToValidate="PW2Box" ForeColor="Red" ControlToCompare="PW1Box"></asp:CompareValidator></td>
                 </tr>
             </table>
-              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Staff]"></asp:SqlDataSource>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:GarbageConnectionString %>" SelectCommand="SELECT * FROM [CaptainStaff]"></asp:SqlDataSource>
               <asp:Label ID="Label2" runat="server"></asp:Label>
             <asp:Button ID="Button1" runat="server" Text="Save" OnClick="Button1_Click" />
-             <asp:Button ID="Button2" runat="server" Text="Back" />
 
         </div>
     </form>

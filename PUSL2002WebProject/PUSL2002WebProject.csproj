@@ -156,6 +156,7 @@
     <Content Include="App_Data\Admin_log.ldf">
       <DependentUpon>Admin.mdf</DependentUpon>
     </Content>
+    <Content Include="captain account.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -174,17 +175,25 @@
     <Content Include="imageuploadbyvol.aspx" />
     <Content Include="GTFPage.aspx" />
     <Content Include="Database\garbLight.db" />
+<<<<<<< HEAD
     <Content Include="image\add.png" />
     <Content Include="image\cancel.png" />
     <Content Include="image\Delete.png" />
     <Content Include="image\edit.png" />
     <Content Include="image\save.png" />
     <Content Include="LogingFormForAll.aspx" />
+=======
+    <Content Include="IncidentList.aspx" />
+>>>>>>> 4ee1678ff429f6c8003b8572a27f4cfc6e427992
     <Content Include="uploadImage.aspx" />
     <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="incident.aspx" />
     <Content Include="incident.css" />
+<<<<<<< HEAD
+=======
+    <Content Include="Login1.aspx" />
+>>>>>>> 4ee1678ff429f6c8003b8572a27f4cfc6e427992
     <Content Include="incident.aspx" />
     <Content Include="incident.css" />
     <Content Include="MainMapPage.aspx" />
@@ -267,6 +276,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="captain account.aspx.cs">
+      <DependentUpon>captain account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="captain account.aspx.designer.cs">
+      <DependentUpon>captain account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -291,6 +307,7 @@
     <Compile Include="incident.aspx.designer.cs">
       <DependentUpon>incident.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="LogingFormForAll.aspx.cs">
       <DependentUpon>LogingFormForAll.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -299,6 +316,15 @@
       <DependentUpon>LogingFormForAll.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+=======
+    <Compile Include="IncidentList.aspx.cs">
+      <DependentUpon>IncidentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncidentList.aspx.designer.cs">
+      <DependentUpon>IncidentList.aspx</DependentUpon>
+    </Compile>
+>>>>>>> 4ee1678ff429f6c8003b8572a27f4cfc6e427992
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -379,7 +405,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />
+<<<<<<< HEAD
   <ItemGroup />
+=======
+>>>>>>> 4ee1678ff429f6c8003b8572a27f4cfc6e427992
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />
