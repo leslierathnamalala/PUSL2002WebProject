@@ -181,6 +181,9 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="incident.aspx" />
     <Content Include="incident.css" />
+    <Content Include="Login1.aspx" />
+    <Content Include="incident.aspx" />
+    <Content Include="incident.css" />
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
     <Content Include="Resources\Menustyles.css" />

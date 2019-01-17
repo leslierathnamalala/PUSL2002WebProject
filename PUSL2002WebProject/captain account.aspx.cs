@@ -29,10 +29,9 @@ namespace PUSL2002WebProject
                 ListView1.DataSource = rdr;
                 ListView1.DataBind();
             }
-
-
         }
+            
 
-
+       
     }
 }

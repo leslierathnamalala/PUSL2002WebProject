@@ -89,7 +89,6 @@
 
         </div>
            </div>
-<<<<<<< HEAD
             <div id="mapDiv">
                  <div>
              <div id="dvMap" style="width: 760px; height: 716px">
@@ -125,9 +124,9 @@
         }
     </script>
         </div>
-=======
+
             <div id="mapDiv" style="overflow: scroll">
->>>>>>> f2af1c6c6172394a37df6041cdcdac70e9664eda
+
             </div>
         </div>
         
