@@ -36,7 +36,7 @@
             
         }
         #mapDiv{
-            width: 900px; height: 500px;float:left;border: 25px solid green;
+            width: 760px; height: 500px;float:left;border: 25px solid green;
             border-style: inset;
             border-width: 5px 7px 5px 7px;
             height:720px;
@@ -89,7 +89,45 @@
 
         </div>
            </div>
+<<<<<<< HEAD
+            <div id="mapDiv">
+                 <div>
+             <div id="dvMap" style="width: 760px; height: 716px">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQNninyZTdg4dNCZ7WPSbY-s_n6yseAT8"></script>
+    <script type="text/javascript">
+        var markers = <%=this.Connect()%>;
+        window.onload = function () {
+            var mapOptions = {
+                center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var infoWindow = new google.maps.InfoWindow();
+            var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+            for (i = 0; i < markers.length; i++) {
+                var data = markers[i]
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: data.title
+                });
+                (function (marker, data) {
+                    google.maps.event.addListener(marker, "click", function (e) {
+                        infoWindow.setContent(data.description);
+                        infoWindow.open(map, marker);
+                    });
+                })(marker, data);
+            }
+        }
+    </script>
+        </div>
+=======
             <div id="mapDiv" style="overflow: scroll">
+>>>>>>> f2af1c6c6172394a37df6041cdcdac70e9664eda
             </div>
         </div>
         

@@ -42,9 +42,9 @@ namespace Google_Maps_MVC.Controllers
             return View();
         }
         [HttpGet]
-        public RedirectResult redirect()
+        public ActionResult redirect()
         {
-            return Redirect("www.google.com");
+            return new RedirectResult("http://www.google.com");
         }
     }
 }
