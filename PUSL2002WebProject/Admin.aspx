@@ -69,6 +69,8 @@
         &nbsp;<div id="two" style="padding: 20px; color: #FFFFFF; width: 500px; height: 450px;">
 
             News Upload<br />
+                    <asp:Label ID="Label3" runat="server" Text="Date"></asp:Label>
+                    <asp:TextBox ID="TextBox3" runat="server" style="margin-left: 10px; margin-bottom: 1px" TextMode="Date" Width="176px"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="Label1" runat="server" Text="Ttile" ForeColor="White"></asp:Label>
@@ -81,14 +83,16 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox2" runat="server" BorderColor="#003300" BorderStyle="Solid" BorderWidth="3px" ForeColor="#99FF33" Height="171px" TextMode="MultiLine" Width="420px"></asp:TextBox>
             <br />
+                    <asp:FileUpload ID="FileUpload1" runat="server" style="margin-left: 55px" Width="432px" />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" Text="Submit" Width="91px" />
+            <asp:Button ID="Button3" runat="server" Text="Submit" Width="91px" Height="23px" OnClick="Button3_Click" style="margin-right: 0px; margin-top: 32px" />
             <br />
             
 
         </div>
            </div>
+            <!--
             <div id="mapDiv">
                  <div>
              <div id="dvMap" style="width: 760px; height: 716px">
@@ -97,7 +101,7 @@
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQNninyZTdg4dNCZ7WPSbY-s_n6yseAT8"></script>
     <script type="text/javascript">
-        var markers = <%=this.Connect()%>;
+        var markers = <%//=this.Connect()%>;
         window.onload = function () {
             var mapOptions = {
                 center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
@@ -125,11 +129,10 @@
     </script>
         </div>
 
-            <div id="mapDiv" style="overflow: scroll">
-
-            </div>
+            
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:GarbageConnectionStringforNews %>" SelectCommand="SELECT * FROM [Articles]"></asp:SqlDataSource>
         </div>
-        
+        -->
     </form>
 </body>
 </html>

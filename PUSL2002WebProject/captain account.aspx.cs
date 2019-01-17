@@ -14,12 +14,7 @@ namespace PUSL2002WebProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*  SqlConnection con = new SqlConnection("Data Source=DESKTOP-J3SS71C;Initial Catalog=Garbage;Integrated Security=True");
-              SqlDataAdapter sda = new SqlDataAdapter("Select Description,ImageData from tblImages ",con);
-              DataTable dt = new DataTable();
-              sda.Fill(dt);
-              ListView1.DataSource = dt;
-              ListView1.DataBind();*/
+            
             String cs = ConfigurationManager.ConnectionStrings["GarbageConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
@@ -30,8 +25,10 @@ namespace PUSL2002WebProject
                 ListView1.DataBind();
             }
         }
-            
 
-       
+        protected void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

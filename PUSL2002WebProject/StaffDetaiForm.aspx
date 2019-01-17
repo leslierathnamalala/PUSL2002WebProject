@@ -72,7 +72,7 @@
                  <tr>
                     <td><asp:Label ID="Email" runat="server" Text="Email"></asp:Label> </td>
                     <td> <asp:TextBox ID="EBox" runat="server" TextMode="Email"></asp:TextBox></td>
-                    <td>
+                    
                 </tr>
                  <tr>
                     <td><asp:Label ID="Dob" runat="server" Text="DoB"></asp:Label> </td>
@@ -103,7 +103,6 @@
               <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:GarbageConnectionString %>" SelectCommand="SELECT * FROM [CaptainStaff]"></asp:SqlDataSource>
               <asp:Label ID="Label2" runat="server"></asp:Label>
             <asp:Button ID="Button1" runat="server" Text="Save" OnClick="Button1_Click" />
-             <asp:Button ID="Button2" runat="server" Text="Back" />
 
         </div>
     </form>

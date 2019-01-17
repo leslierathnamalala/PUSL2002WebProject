@@ -48,15 +48,13 @@
               <asp:Label ID="Label1" runat="server" Text="Reported Incidents" ForeColor="White"></asp:Label>
               
 
-           <asp:ListView ID="ListView1" runat="server" >
+           <asp:ListView ID="ListView1" runat="server" OnSelectedIndexChanged="ListView1_SelectedIndexChanged" >
               <ItemTemplate>
                   <div id="list"  >
                        <table>
                           <tr> 
                              <td><asp:Image ID="Image1" runat="server" Height="100px" Width="200px" src='<%#String.Format("data:Image/jpg;base64,{0}", Convert.ToBase64String((byte[])Eval("ImageData"))) %>' /></td>
                               <td style="color: #FFFFFF"><p >"<%# Eval("Description")%>"</p></td>
-                              <td> <asp:Button ID="Button1" runat="server" Text="Approve" /></td>
-                              <td>  <asp:Button ID="Button2" runat="server" Text="Reject" /></td>
                            </tr>                                  
                        </table>
                     </div>
