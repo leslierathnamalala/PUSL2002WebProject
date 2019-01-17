@@ -18,4 +18,5 @@ namespace GoogleMapLocations.Models
         public float Longitude { get; set; }
         public string Description { get; set; }
     }
+    
 }

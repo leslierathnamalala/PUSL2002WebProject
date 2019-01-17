@@ -67,6 +67,11 @@ body {
   outline: 0 !important;
 }
 
+#homeico{
+    margin-left:50%
+
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
