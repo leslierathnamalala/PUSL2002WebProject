@@ -156,6 +156,7 @@
     <Content Include="App_Data\Admin_log.ldf">
       <DependentUpon>Admin.mdf</DependentUpon>
     </Content>
+    <Content Include="captain account.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -174,6 +175,7 @@
     <Content Include="imageuploadbyvol.aspx" />
     <Content Include="GTFPage.aspx" />
     <Content Include="Database\garbLight.db" />
+    <Content Include="IncidentList.aspx" />
     <Content Include="uploadImage.aspx" />
     <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -259,6 +261,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="captain account.aspx.cs">
+      <DependentUpon>captain account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="captain account.aspx.designer.cs">
+      <DependentUpon>captain account.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -283,9 +292,16 @@
     <Compile Include="incident.aspx.designer.cs">
       <DependentUpon>incident.aspx</DependentUpon>
     </Compile>
-    
+    <Compile Include="IncidentList.aspx.cs">
+      <DependentUpon>IncidentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncidentList.aspx.designer.cs">
+      <DependentUpon>IncidentList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="imageuploadbyvol.aspx.cs">
       <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
