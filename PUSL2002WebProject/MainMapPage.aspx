@@ -82,13 +82,13 @@
         <div id="maparea">
             <div id="googleMap" style="width:100%;height:400px;" ></div>
             <script>
-function myMap() {
-var mapProp= {
-    center: new google.maps.LatLng(6.9225376, 79.8526804),
-    zoom:16,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
+                function myMap() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(6.9225376, 79.8526804),
+                        zoom: 16,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQNninyZTdg4dNCZ7WPSbY-s_n6yseAT8&callback=myMap"></script>

@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StaffDetaiForm.aspx.cs" Inherits="PUSL2002WebProject.StaffDetaiForm" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StaffDetaiForm.aspx.cs" Inherits="PUSL2002WebProject.StaffDetaiForm" %>
 
 <!DOCTYPE html>
 
@@ -29,10 +30,24 @@
         }
         #Button1 {
             margin-left:1000px;
-            margin-top:60px;
-            background-color: #4CAF50;
-            border: solid black;
-            color: black;
+            margin-top:10px;
+            margin-bottom:20px;
+            background-color:aliceblue;
+             border: 25px solid green;
+            border-style: inset;
+            border-width: 5px 7px 5px 7px; 
+            padding: 15px 32px;
+        }
+
+         #Button2 {
+            margin-left:1200;
+            margin-top:10px;
+            margin-bottom:20px;
+            background-color:aliceblue;
+             border: 25px solid green;
+          
+            border-style: inset;
+            border-width: 5px 7px 5px 7px; 
             padding: 15px 32px;
         }
 
@@ -40,8 +55,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-              <asp:Label ID="Label1" runat="server" Text="Enter Staff Detail"></asp:Label>
+                <div style="background-image:url(image/Back.jpeg)">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <asp:Label ID="Label1" runat="server" Text="Enter Staff Details" ForeColor="White"></asp:Label>
             <table style="width: 100%;" id="tabledata">
                 <tr>
                     <td><asp:Label ID="Fname" runat="server" Text="FirstName"></asp:Label> </td>
@@ -85,7 +101,12 @@
                     <td> <asp:CompareValidator ID="CompareValidatorPW" runat="server" ErrorMessage="Mismatch" ControlToValidate="PW2Box" ForeColor="Red"></asp:CompareValidator></td>
                 </tr>
             </table>
-            <asp:Button ID="Button1" runat="server" Text="Save" />
+              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Staff]"></asp:SqlDataSource>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <asp:Label ID="Label2" runat="server"></asp:Label>
+            <asp:Button ID="Button1" runat="server" Text="Save" OnClick="Button1_Click" />
+             <asp:Button ID="Button2" runat="server" Text="Back" />
+
         </div>
     </form>
 </body>
