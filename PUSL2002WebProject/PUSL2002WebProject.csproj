@@ -148,19 +148,14 @@
     <Content Include="About.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="AdminPage.aspx" />
-
-
-
     <Content Include="App_Data\Locations.mdf" />
     <Content Include="App_Data\Locations_log.ldf">
       <DependentUpon>Locations.mdf</DependentUpon>
-</Content>
+    </Content>
     <Content Include="App_Data\Admin.mdf" />
     <Content Include="App_Data\Admin_log.ldf">
       <DependentUpon>Admin.mdf</DependentUpon>
-
     </Content>
-
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -176,29 +171,19 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="CaptainDetails2.aspx" />
-
-
     <Content Include="imageuploadbyvol.aspx" />
-
-
-
-
     <Content Include="GTFPage.aspx" />
-
     <Content Include="Database\garbLight.db" />
     <Content Include="login.aspx" />
     <Content Include="uploadImage.aspx" />
     <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-
-
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
     <Content Include="Resources\Menustyles.css" />
     <Content Include="Resources\Styles.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Captain.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -288,8 +273,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-
-
     <Compile Include="imageuploadbyvol.aspx.cs">
       <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -297,25 +280,20 @@
     <Compile Include="imageuploadbyvol.aspx.designer.cs">
       <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
     </Compile>
-
-
     <Compile Include="GTFPage.aspx.cs">
       <DependentUpon>GTFPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    
     <Compile Include="GTFPage.aspx.designer.cs">
       <DependentUpon>GTFPage.aspx</DependentUpon>
-</Compile>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
-
     </Compile>
-
     <Compile Include="MainMapPage.aspx.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -373,24 +351,11 @@
     <Compile Include="WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Captain.aspx.cs">
-      <DependentUpon>Captain.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Captain.aspx.designer.cs">
-      <DependentUpon>Captain.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
-
-
-
-  <ItemGroup />
-
   <ItemGroup>
     <Folder Include="image\" />
   </ItemGroup>
-
-
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />
