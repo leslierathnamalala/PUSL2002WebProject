@@ -52,7 +52,7 @@
             <table id="incident" style="width: 100%; background-color: #000000;">
                 <tr>
                     <td class="auto-style1"> <asp:FileUpload ID="FileUpload1" runat="server" Height="138px" Width="431px" />
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:GarbageConnectionString %>" SelectCommand="SELECT * FROM [tblImages]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PuslImageDatabaseConnectionString %>" SelectCommand="SELECT * FROM [tblImages]"></asp:SqlDataSource>
                     </td> 
                 </tr>
 

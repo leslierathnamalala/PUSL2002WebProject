@@ -174,20 +174,19 @@
     <Content Include="imageuploadbyvol.aspx" />
     <Content Include="GTFPage.aspx" />
     <Content Include="Database\garbLight.db" />
+    <Content Include="image\add.png" />
+    <Content Include="image\cancel.png" />
+    <Content Include="image\Delete.png" />
+    <Content Include="image\edit.png" />
+    <Content Include="image\save.png" />
+    <Content Include="LogingFormForAll.aspx" />
     <Content Include="uploadImage.aspx" />
     <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-<<<<<<< HEAD
-    <Content Include="log1.aspx" />
-    <Content Include="Login form.aspx" />
     <Content Include="incident.aspx" />
     <Content Include="incident.css" />
-    <Content Include="Login1.aspx" />
-    <Content Include="Login.css" />
-=======
     <Content Include="incident.aspx" />
     <Content Include="incident.css" />
->>>>>>> a8300afa868218e506866eae51b65fcb5335bf4c
     <Content Include="MainMapPage.aspx" />
     <Content Include="Resources\jquery-latest.min.js" />
     <Content Include="Resources\Menustyles.css" />
@@ -285,19 +284,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="log1.aspx.cs">
-      <DependentUpon>log1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="log1.aspx.designer.cs">
-      <DependentUpon>log1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login form.aspx.cs">
-      <DependentUpon>Login form.aspx</DependentUpon>
-    </Compile>
-=======
->>>>>>> a8300afa868218e506866eae51b65fcb5335bf4c
     <Compile Include="incident.aspx.cs">
       <DependentUpon>incident.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -305,20 +291,17 @@
     <Compile Include="incident.aspx.designer.cs">
       <DependentUpon>incident.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="LogingFormForAll.aspx.cs">
+      <DependentUpon>LogingFormForAll.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="LogingFormForAll.aspx.designer.cs">
+      <DependentUpon>LogingFormForAll.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-=======
-    
->>>>>>> a8300afa868218e506866eae51b65fcb5335bf4c
     <Compile Include="Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="imageuploadbyvol.aspx.cs">
       <DependentUpon>imageuploadbyvol.aspx</DependentUpon>
@@ -333,16 +316,6 @@
     </Compile>
     <Compile Include="GTFPage.aspx.designer.cs">
       <DependentUpon>GTFPage.aspx</DependentUpon>
-<<<<<<< HEAD
-    </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-=======
->>>>>>> a8300afa868218e506866eae51b65fcb5335bf4c
     </Compile>
     <Compile Include="MainMapPage.aspx.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
@@ -351,7 +324,9 @@
     <Compile Include="MainMapPage.aspx.designer.cs">
       <DependentUpon>MainMapPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -402,14 +377,9 @@
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="image\" />
-  </ItemGroup>
   <ItemGroup />
-<<<<<<< HEAD
-=======
   <ItemGroup />
->>>>>>> a8300afa868218e506866eae51b65fcb5335bf4c
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />

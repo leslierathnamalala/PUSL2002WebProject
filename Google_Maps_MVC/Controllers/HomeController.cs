@@ -17,7 +17,7 @@ namespace Google_Maps_MVC.Controllers
         {
             string markers = "[";
             string conString = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            SqlCommand cmd = new SqlCommand("SELECT * FROM GoogleMap");
+            SqlCommand cmd = new SqlCommand("SELECT * FROM GoogleMap where type = 'urgent' ");
             using (SqlConnection con = new SqlConnection(conString))
             {
                 cmd.Connection = con;
